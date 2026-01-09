@@ -8,7 +8,8 @@
 }
 
 :root {
-    --form-shadow-y: 5px
+    --form-shadow-y: 5px;
+    --div-width: 75%
 }
 
 html, body {
@@ -85,22 +86,62 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* hero */
+
 .heroContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero {
-    max-width: min(50ch, 75%);
+.heroDiv {
+    width: var(--div-width);
     font-weight: bold;
     font-size: 1.35rem;
 }
+
+/* form */
 
 .formContainer {
     background-color: white;
     box-shadow: 0 var(--form-shadow-y) 5px lightgrey;
 }
 
+/* login  */
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.loginDiv {
+    width: var(--div-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.createAccount,
+.login {
+    margin-top: 6.5%;
+}
+
+.createAccount {
+    max-width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.login a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
 
 
