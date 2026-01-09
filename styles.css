@@ -105,7 +105,37 @@ body {
 .formContainer {
     background-color: white;
     box-shadow: 0 var(--form-shadow-y) 5px lightgrey;
+    display: flex;
+    justify-content: center;
 }
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    height: 100%;
+    width: var(--div-width);
+}
+
+.letsDoThis {
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    height: 100%;
+}
+
+.formRow {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+}
+
 
 /* login  */
 
