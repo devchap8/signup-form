@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main {
+    height: 100%;
+}
+
+.imageContainer {
+    flex: 1.25;
+    background-image: url("images/leaves.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.logoContainer {
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: calc(1rem + 8vh)
+}
+
+.odinImage {
+    height: 80%;
+}
+
+.formContainer {
+    flex: 2;
+}
+
+
+
+
