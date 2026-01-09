@@ -8,7 +8,7 @@
 }
 
 :root {
-    --form-shadow-y: 5px;
+    --shadow: 0 5px 5px lightgrey;
     --div-width: 75%
 }
 
@@ -104,7 +104,7 @@ body {
 
 .formContainer {
     background-color: white;
-    box-shadow: 0 var(--form-shadow-y) 5px lightgrey;
+    box-shadow: var(--shadow);
     display: flex;
     justify-content: center;
 }
@@ -112,7 +112,6 @@ body {
 .formDiv {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     height: 100%;
     width: var(--div-width);
 }
@@ -136,6 +135,28 @@ form {
     width: 100%;
 }
 
+label {
+    font-size: .8rem;
+    font-weight: 600;
+    color: rgb(66, 66, 66);
+}
+
+input {
+    border: solid 1px #E5E7EB;
+    border-radius: 5px;
+    height: 25px;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: var(--shadow);
+    outline: none;
+}
+
 
 /* login  */
 
@@ -153,7 +174,7 @@ form {
 
 .createAccount,
 .login {
-    margin-top: 6.5%;
+    margin-top: 35px;
 }
 
 .createAccount {
